@@ -1,0 +1,26 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "um projeto simples para aprendermos sobre nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
+  "keywords": [
+    "nodejs",
+    "qaninja",
+    "unitests",
+    "apitests"
+  ],
+  "author": "Fernando Papito",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0"
+  }
+}
