@@ -6,7 +6,8 @@
   "scripts": {
     "start": "babel-node app.js",
     "dev": "nodemon --exec babel-node app.js",
-    "test": "mocha test --require babel-register --exit"
+    "test": "mocha test --require babel-register --exit",
+    "clean": "./scripts/dropdb.sh"
   },
   "keywords": [
     "qaninja",
