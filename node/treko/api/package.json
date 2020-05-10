@@ -7,6 +7,7 @@
     "start": "babel-node app.js",
     "dev": "nodemon --exec babel-node app.js",
     "test": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --require babel-register --exit",
+    "test:dot": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --reporter dot --require babel-register --exit",
     "clean": "./scripts/dropdb.sh"
   },
   "keywords": [
