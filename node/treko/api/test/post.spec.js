@@ -46,7 +46,6 @@ describe('post', () => {
                 .send(payload)
                 .end((err, res) => {
                     expect(res).to.have.status(200);
-                    expect(res.body[0].payload).to.contain(`Tarefa ${task.title} criada com sucesso!`)
                     done();
                 })
         })
