@@ -8,6 +8,9 @@
     "dev": "nodemon --exec babel-node app.js",
     "test": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --require babel-register --exit",
     "test:dot": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --reporter dot --require babel-register --exit",
+    "test:nyan": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --reporter nyan --require babel-register --exit",
+    "test:tap": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --reporter tap --require babel-register --exit",
+    "test:html": "mongo --host 127.0.0.1:27017 trekodb --eval 'db.tasks.drop()' && mocha test --reporter mochawesome --require babel-register --exit",
     "clean": "./scripts/dropdb.sh"
   },
   "keywords": [
@@ -23,6 +26,7 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "mochawesome": "^6.1.1",
     "mongoose": "^5.4.20"
   },
   "devDependencies": {
